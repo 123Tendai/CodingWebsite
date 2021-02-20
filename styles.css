@@ -1,0 +1,116 @@
+/* Master styles */
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav Styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
+}
+
+#tut {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
+}
+.spacing-vid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    background-position: center;
+}
+
+.left-side {
+    display: flex;
+}
+
+
+.nav-wrapper > .left-side > div {
+     margin-right: 20px;
+     font-size: 0.9em;    
+     text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px sold transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper a:hover {
+    color:rgb(37, 87, 48);
+}
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* going to have three full size colums*/
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+.port2 {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover; /*Allows every imgage to fit perfectly with one another*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-wrapper img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper  .subtitle {
+    transition: 1s;/* Text becomes visible only when the mouse is hovering in the image*/
+    font-weight: 330;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 330;
+    color: lightseagreen;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+#tut {
+    background-color:rgb(221, 37, 13);
+}
+
+.cover-page{
+ position: static;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ opacity: 0.4;
+}
+
+.video-clip{
+ width: 100%;
+ height: 100%;
+ /*object-fit: cover;*/
+}
